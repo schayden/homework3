@@ -12,7 +12,7 @@ body{
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
-  background: url('../images/pigeon-background.jpeg') #DDDDDD;
+  background: url('/images/pigeon-background.jpg') #DDDDDD;
   background-size: cover ;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,11 +88,18 @@ tr:hover{
 }
 
 thead tr:first-child th:first-child{
-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
 }
 
 thead tr:last-child th:last-child{
+  border-radius: 0 10px 0 0;
+}
+
+tbody tr:last-child th:first-child{
   border-radius: 0 0 0 10px;
+}
+tbody tr:last-child th:last-child{
+  border-radius: 0 0 10px 0;
 }
 
 
